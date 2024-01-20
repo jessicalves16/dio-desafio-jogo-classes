@@ -1,7 +1,6 @@
 //Desafio escrevendo as classes de um Jogo
 
 //Classe representando o Herói
-//tipo (ex: guerreiro, mago, monge, ninja )
 
 class Heroi {
     constructor(nome, idade, tipo){
@@ -10,6 +9,7 @@ class Heroi {
         this.tipo = tipo;
     }
 
+//Método atacar + tipos de ataque
 
     atacar(){
         let ataque;
@@ -31,11 +31,14 @@ class Heroi {
                 ataque = "shuriken";
                 break;
         }
+//Exibir mensagem
 
         console.log(`O ${this.tipo} de nome ${this.nome} que possui ${this.idade} anos de experiência, atacou o oponente usando ${ataque}`)
     }
         
     }
+
+// Instanciar classe Heroi
 
     let heroiJess = new Heroi("Jéssica", 26, "Mago")
     heroiJess.atacar()
